@@ -90,8 +90,18 @@ else
  
 ?>
  
+</div>
+ 
+    <form method="post" action="">
+        <label>Username:</label><br>
+        <input type="text" name="username"><br>
+        <label>Password:</label><br>
+        <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+    <div>
+    <h2>No account? <a href="register.php">Register</a></h2>
     </div>
- 
+    <?php if (isset($login_error)) echo "<p>$login_error</p>"; ?>
 </body>
- 
 </html>
